@@ -20,3 +20,6 @@ C:\Users\Negers\Documents\Visual Studio 2012\Projects\TestApp\TestApp\obj\Releas
 C:\Users\Negers\Documents\Visual Studio 2012\Projects\TestApp\TestApp\obj\Release\TestApp.csproj.GenerateResource.Cache
 C:\Users\Negers\Documents\Visual Studio 2012\Projects\TestApp\TestApp\obj\Release\TestApp.exe
 C:\Users\Negers\Documents\Visual Studio 2012\Projects\TestApp\TestApp\obj\Release\TestApp.pdb
+C:\Users\fredericfrancis\Documents\Visual Studio 2012\Projects\TestApp\TestApp\bin\Release\TestApp.exe.config
+C:\Users\fredericfrancis\Documents\Visual Studio 2012\Projects\TestApp\TestApp\obj\Release\TestApp.exe
+C:\Users\fredericfrancis\Documents\Visual Studio 2012\Projects\TestApp\TestApp\obj\Release\TestApp.pdb
