@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="TestDBModel1.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityContainer Name="TestDBModel1StoreContainer">
+    <EntitySet Name="BaseTMT" EntityType="TestDBModel1.Store.BaseTMT" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="tbl_Fiches" EntityType="TestDBModel1.Store.tbl_Fiches" store:Type="Tables" Schema="dbo" />
+  </EntityContainer>
+  <EntityType Name="BaseTMT">
+    <Key>
+      <PropertyRef Name="Numero" />
+    </Key>
+    <Property Name="Numero" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Titre" Type="nvarchar" MaxLength="255" />
+    <Property Name="Prénom" Type="nvarchar" MaxLength="255" />
+    <Property Name="Nom Propriétaire" Type="nvarchar" MaxLength="255" />
+    <Property Name="Numéro rue Propriétaire" Type="nvarchar" MaxLength="255" />
+    <Property Name="TypeRuePropriétaire" Type="nvarchar" MaxLength="255" />
+    <Property Name="Rue Propriétaire" Type="nvarchar" MaxLength="255" />
+    <Property Name="Code Postal Propriétaire" Type="nvarchar" MaxLength="255" />
+    <Property Name="Ville Propriétaire" Type="nvarchar" MaxLength="255" />
+    <Property Name="TypeRueImmeuble" Type="nvarchar" MaxLength="255" />
+    <Property Name="Commentaire 2" Type="nvarchar" MaxLength="255" />
+    <Property Name="Rue Immeuble" Type="nvarchar" MaxLength="255" />
+    <Property Name="Ville Immeuble" Type="nvarchar" MaxLength="255" />
+    <Property Name="Asterix" Type="nvarchar" MaxLength="255" />
+    <Property Name="Commentaire 1" Type="nvarchar" MaxLength="255" />
+    <Property Name="Téléphone" Type="nvarchar" MaxLength="255" />
+    <Property Name="Taxe fonc" Type="nvarchar" MaxLength="255" />
+    <Property Name="Envoi Courrier" Type="nvarchar" MaxLength="255" />
+    <Property Name="CD_Fiche" Type="nvarchar" MaxLength="255" />
+    <Property Name="DM_Fiche" Type="nvarchar" MaxLength="255" />
+    <Property Name="Code postale Immeuble" Type="nvarchar" MaxLength="255" />
+    <Property Name="Numéro Immeuble" Type="nvarchar" MaxLength="255" />
+    <Property Name="Nom p2" Type="nvarchar" MaxLength="255" />
+    <Property Name="Reponse" Type="nvarchar" MaxLength="255" />
+    <Property Name="Modifier par" Type="nvarchar" MaxLength="255" />
+  </EntityType>
+  <EntityType Name="tbl_Fiches">
+    <Key>
+      <PropertyRef Name="ID_Fiche" />
+    </Key>
+    <Property Name="ID_Fiche" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="ID_Pro" Type="int" />
+    <Property Name="ID_Imm" Type="int" />
+    <Property Name="Asterix" Type="nvarchar" MaxLength="255" />
+    <Property Name="Commentaire1" Type="nvarchar(max)" />
+    <Property Name="Commentaire2" Type="nvarchar(max)" />
+    <Property Name="EnvoiCourrier" Type="nvarchar" MaxLength="255" />
+    <Property Name="CD_Fiche" Type="nvarchar" MaxLength="255" />
+    <Property Name="DM_Fiche" Type="nvarchar" MaxLength="255" />
+    <Property Name="Reponse" Type="nvarchar" MaxLength="255" />
+    <Property Name="ModifierPar" Type="nvarchar" MaxLength="255" />
+    <Property Name="SSMA_TimeStamp" Type="timestamp" Nullable="false" StoreGeneratedPattern="Computed" />
+  </EntityType>
+</Schema>

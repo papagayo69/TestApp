@@ -1,0 +1,76 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="TestDB" Class="DataClasses1DataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=NEGERS-PC\SQLEXPRESS;Initial Catalog=TestDB;Integrated Security=True" SettingsObjectName="TestApp.Properties.Settings" SettingsPropertyName="TestDBConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.BaseTMT" Member="BaseTMT">
+    <Type Name="BaseTMT">
+      <Column Name="Numero" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Titre" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="Prénom" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="[Nom Propriétaire]" Member="Nom_Propriétaire" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="[Numéro rue Propriétaire]" Member="Numéro_rue_Propriétaire" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="TypeRuePropriétaire" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="[Rue Propriétaire]" Member="Rue_Propriétaire" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="[Code Postal Propriétaire]" Member="Code_Postal_Propriétaire" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="[Ville Propriétaire]" Member="Ville_Propriétaire" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="TypeRueImmeuble" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="[Commentaire 2]" Member="Commentaire_2" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="[Rue Immeuble]" Member="Rue_Immeuble" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="[Ville Immeuble]" Member="Ville_Immeuble" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="Asterix" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="[Commentaire 1]" Member="Commentaire_1" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="Téléphone" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="[Taxe fonc]" Member="Taxe_fonc" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="[Envoi Courrier]" Member="Envoi_Courrier" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="CD_Fiche" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="DM_Fiche" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="[Code postale Immeuble]" Member="Code_postale_Immeuble" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="[Numéro Immeuble]" Member="Numéro_Immeuble" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="[Nom p2]" Member="Nom_p2" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="Reponse" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="[Modifier par]" Member="Modifier_par" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tbl_Fiches" Member="tbl_Fiches">
+    <Type Name="tbl_Fiches">
+      <Column Name="ID_Fiche" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="ID_Pro" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="ID_Imm" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Asterix" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="Commentaire1" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="Commentaire2" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="EnvoiCourrier" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="CD_Fiche" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="DM_Fiche" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="Reponse" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="ModifierPar" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="SSMA_TimeStamp" Type="System.Data.Linq.Binary" DbType="rowversion NOT NULL" CanBeNull="false" IsVersion="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tbl_Immeuble" Member="tbl_Immeuble">
+    <Type Name="tbl_Immeuble">
+      <Column Name="ID_Imm" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="TypeRueImm" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="RueImm" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="VilleImm" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="CodePostaleImm" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="NumImm" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="Reponse" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="ModifierPar" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tbl_Proprio" Member="tbl_Proprio">
+    <Type Name="tbl_Proprio">
+      <Column Name="ID_Pro" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Titre" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="Prenom" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="Nom_Pro" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="Nom_p2" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="NumRuePro" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="TypeRuePro" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="RueProp" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="CodePostalPro" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="VillePro" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="Tel" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="TaxeFonc" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+    </Type>
+  </Table>
+</Database>

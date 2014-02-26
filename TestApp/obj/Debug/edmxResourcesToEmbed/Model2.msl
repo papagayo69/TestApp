@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="TestDBModel1StoreContainer" CdmEntityContainer="TestDBEntities2">
+    <EntitySetMapping Name="BaseTMT">
+      <EntityTypeMapping TypeName="TestDBModel1.BaseTMT">
+        <MappingFragment StoreEntitySet="BaseTMT">
+          <ScalarProperty Name="Numero" ColumnName="Numero" />
+          <ScalarProperty Name="Titre" ColumnName="Titre" />
+          <ScalarProperty Name="Prénom" ColumnName="Prénom" />
+          <ScalarProperty Name="Nom_Propriétaire" ColumnName="Nom Propriétaire" />
+          <ScalarProperty Name="Numéro_rue_Propriétaire" ColumnName="Numéro rue Propriétaire" />
+          <ScalarProperty Name="TypeRuePropriétaire" ColumnName="TypeRuePropriétaire" />
+          <ScalarProperty Name="Rue_Propriétaire" ColumnName="Rue Propriétaire" />
+          <ScalarProperty Name="Code_Postal_Propriétaire" ColumnName="Code Postal Propriétaire" />
+          <ScalarProperty Name="Ville_Propriétaire" ColumnName="Ville Propriétaire" />
+          <ScalarProperty Name="TypeRueImmeuble" ColumnName="TypeRueImmeuble" />
+          <ScalarProperty Name="Commentaire_2" ColumnName="Commentaire 2" />
+          <ScalarProperty Name="Rue_Immeuble" ColumnName="Rue Immeuble" />
+          <ScalarProperty Name="Ville_Immeuble" ColumnName="Ville Immeuble" />
+          <ScalarProperty Name="Asterix" ColumnName="Asterix" />
+          <ScalarProperty Name="Commentaire_1" ColumnName="Commentaire 1" />
+          <ScalarProperty Name="Téléphone" ColumnName="Téléphone" />
+          <ScalarProperty Name="Taxe_fonc" ColumnName="Taxe fonc" />
+          <ScalarProperty Name="Envoi_Courrier" ColumnName="Envoi Courrier" />
+          <ScalarProperty Name="CD_Fiche" ColumnName="CD_Fiche" />
+          <ScalarProperty Name="DM_Fiche" ColumnName="DM_Fiche" />
+          <ScalarProperty Name="Code_postale_Immeuble" ColumnName="Code postale Immeuble" />
+          <ScalarProperty Name="Numéro_Immeuble" ColumnName="Numéro Immeuble" />
+          <ScalarProperty Name="Nom_p2" ColumnName="Nom p2" />
+          <ScalarProperty Name="Reponse" ColumnName="Reponse" />
+          <ScalarProperty Name="Modifier_par" ColumnName="Modifier par" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_Fiches">
+      <EntityTypeMapping TypeName="TestDBModel1.tbl_Fiches">
+        <MappingFragment StoreEntitySet="tbl_Fiches">
+          <ScalarProperty Name="ID_Fiche" ColumnName="ID_Fiche" />
+          <ScalarProperty Name="ID_Pro" ColumnName="ID_Pro" />
+          <ScalarProperty Name="ID_Imm" ColumnName="ID_Imm" />
+          <ScalarProperty Name="Asterix" ColumnName="Asterix" />
+          <ScalarProperty Name="Commentaire1" ColumnName="Commentaire1" />
+          <ScalarProperty Name="Commentaire2" ColumnName="Commentaire2" />
+          <ScalarProperty Name="EnvoiCourrier" ColumnName="EnvoiCourrier" />
+          <ScalarProperty Name="CD_Fiche" ColumnName="CD_Fiche" />
+          <ScalarProperty Name="DM_Fiche" ColumnName="DM_Fiche" />
+          <ScalarProperty Name="Reponse" ColumnName="Reponse" />
+          <ScalarProperty Name="ModifierPar" ColumnName="ModifierPar" />
+          <ScalarProperty Name="SSMA_TimeStamp" ColumnName="SSMA_TimeStamp" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

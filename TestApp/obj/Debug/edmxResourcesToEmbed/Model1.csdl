@@ -1,0 +1,86 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="TestDBModel" Alias="Self" p1:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:p1="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityContainer Name="TestDBEntities1" p1:LazyLoadingEnabled="true">
+    <EntitySet Name="BaseTMTs" EntityType="TestDBModel.BaseTMT" />
+    <EntitySet Name="tbl_Fiches" EntityType="TestDBModel.tbl_Fiches" />
+    <EntitySet Name="tbl_Immeuble" EntityType="TestDBModel.tbl_Immeuble" />
+    <EntitySet Name="tbl_Proprio" EntityType="TestDBModel.tbl_Proprio" />
+  </EntityContainer>
+  <EntityType Name="BaseTMT">
+    <Key>
+      <PropertyRef Name="Numero" />
+    </Key>
+    <Property Name="Numero" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+    <Property Name="Titre" Type="String" MaxLength="255" Unicode="true" FixedLength="false" />
+    <Property Name="Prénom" Type="String" MaxLength="255" Unicode="true" FixedLength="false" />
+    <Property Name="Nom_Propriétaire" Type="String" MaxLength="255" Unicode="true" FixedLength="false" />
+    <Property Name="Numéro_rue_Propriétaire" Type="String" MaxLength="255" Unicode="true" FixedLength="false" />
+    <Property Name="TypeRuePropriétaire" Type="String" MaxLength="255" Unicode="true" FixedLength="false" />
+    <Property Name="Rue_Propriétaire" Type="String" MaxLength="255" Unicode="true" FixedLength="false" />
+    <Property Name="Code_Postal_Propriétaire" Type="String" MaxLength="255" Unicode="true" FixedLength="false" />
+    <Property Name="Ville_Propriétaire" Type="String" MaxLength="255" Unicode="true" FixedLength="false" />
+    <Property Name="TypeRueImmeuble" Type="String" MaxLength="255" Unicode="true" FixedLength="false" />
+    <Property Name="Commentaire_2" Type="String" MaxLength="255" Unicode="true" FixedLength="false" />
+    <Property Name="Rue_Immeuble" Type="String" MaxLength="255" Unicode="true" FixedLength="false" />
+    <Property Name="Ville_Immeuble" Type="String" MaxLength="255" Unicode="true" FixedLength="false" />
+    <Property Name="Asterix" Type="String" MaxLength="255" Unicode="true" FixedLength="false" />
+    <Property Name="Commentaire_1" Type="String" MaxLength="255" Unicode="true" FixedLength="false" />
+    <Property Name="Téléphone" Type="String" MaxLength="255" Unicode="true" FixedLength="false" />
+    <Property Name="Taxe_fonc" Type="String" MaxLength="255" Unicode="true" FixedLength="false" />
+    <Property Name="Envoi_Courrier" Type="String" MaxLength="255" Unicode="true" FixedLength="false" />
+    <Property Name="CD_Fiche" Type="String" MaxLength="255" Unicode="true" FixedLength="false" />
+    <Property Name="DM_Fiche" Type="String" MaxLength="255" Unicode="true" FixedLength="false" />
+    <Property Name="Code_postale_Immeuble" Type="String" MaxLength="255" Unicode="true" FixedLength="false" />
+    <Property Name="Numéro_Immeuble" Type="String" MaxLength="255" Unicode="true" FixedLength="false" />
+    <Property Name="Nom_p2" Type="String" MaxLength="255" Unicode="true" FixedLength="false" />
+    <Property Name="Reponse" Type="String" MaxLength="255" Unicode="true" FixedLength="false" />
+    <Property Name="Modifier_par" Type="String" MaxLength="255" Unicode="true" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="tbl_Fiches">
+    <Key>
+      <PropertyRef Name="ID_Fiche" />
+    </Key>
+    <Property Name="ID_Fiche" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+    <Property Name="ID_Pro" Type="Int32" />
+    <Property Name="ID_Imm" Type="Int32" />
+    <Property Name="Asterix" Type="String" MaxLength="255" Unicode="true" FixedLength="false" />
+    <Property Name="Commentaire1" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="Commentaire2" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="EnvoiCourrier" Type="String" MaxLength="255" Unicode="true" FixedLength="false" />
+    <Property Name="CD_Fiche" Type="String" MaxLength="255" Unicode="true" FixedLength="false" />
+    <Property Name="DM_Fiche" Type="String" MaxLength="255" Unicode="true" FixedLength="false" />
+    <Property Name="Reponse" Type="String" MaxLength="255" Unicode="true" FixedLength="false" />
+    <Property Name="ModifierPar" Type="String" MaxLength="255" Unicode="true" FixedLength="false" />
+    <Property Name="SSMA_TimeStamp" Type="Binary" Nullable="false" MaxLength="8" FixedLength="true" p1:StoreGeneratedPattern="Computed" />
+  </EntityType>
+  <EntityType Name="tbl_Immeuble">
+    <Key>
+      <PropertyRef Name="ID_Imm" />
+    </Key>
+    <Property Name="ID_Imm" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+    <Property Name="TypeRueImm" Type="String" MaxLength="255" Unicode="true" FixedLength="false" />
+    <Property Name="RueImm" Type="String" MaxLength="255" Unicode="true" FixedLength="false" />
+    <Property Name="VilleImm" Type="String" MaxLength="255" Unicode="true" FixedLength="false" />
+    <Property Name="CodePostaleImm" Type="String" MaxLength="255" Unicode="true" FixedLength="false" />
+    <Property Name="NumImm" Type="String" MaxLength="255" Unicode="true" FixedLength="false" />
+    <Property Name="Reponse" Type="String" MaxLength="255" Unicode="true" FixedLength="false" />
+    <Property Name="ModifierPar" Type="String" MaxLength="255" Unicode="true" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="tbl_Proprio">
+    <Key>
+      <PropertyRef Name="ID_Pro" />
+    </Key>
+    <Property Name="ID_Pro" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+    <Property Name="Titre" Type="String" MaxLength="255" Unicode="true" FixedLength="false" />
+    <Property Name="Prenom" Type="String" MaxLength="255" Unicode="true" FixedLength="false" />
+    <Property Name="Nom_Pro" Type="String" MaxLength="255" Unicode="true" FixedLength="false" />
+    <Property Name="Nom_p2" Type="String" MaxLength="255" Unicode="true" FixedLength="false" />
+    <Property Name="NumRuePro" Type="String" MaxLength="255" Unicode="true" FixedLength="false" />
+    <Property Name="TypeRuePro" Type="String" MaxLength="255" Unicode="true" FixedLength="false" />
+    <Property Name="RueProp" Type="String" MaxLength="255" Unicode="true" FixedLength="false" />
+    <Property Name="CodePostalPro" Type="String" MaxLength="255" Unicode="true" FixedLength="false" />
+    <Property Name="VillePro" Type="String" MaxLength="255" Unicode="true" FixedLength="false" />
+    <Property Name="Tel" Type="String" MaxLength="255" Unicode="true" FixedLength="false" />
+    <Property Name="TaxeFonc" Type="String" MaxLength="255" Unicode="true" FixedLength="false" />
+  </EntityType>
+</Schema>
